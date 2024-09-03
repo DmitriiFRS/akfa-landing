@@ -1,0 +1,19 @@
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 10;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) 46.67%, rgba(0, 0, 0, 0.1) 74.17%, hsla(0, 0%, 100%, 0));
+   color: #eeeeee;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 5vw;
+}
+.navlist {
+   display: flex;
+   gap: 2vw;
+}

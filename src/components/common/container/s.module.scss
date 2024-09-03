@@ -1,0 +1,6 @@
+.container {
+   padding: var(--padding);
+   @media (max-width: 1100px) {
+      padding: var(--padding-mobile);
+   }
+}
