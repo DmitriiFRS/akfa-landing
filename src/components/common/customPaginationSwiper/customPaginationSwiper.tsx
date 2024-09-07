@@ -12,7 +12,14 @@ interface Props {
    setActiveIndex: React.Dispatch<React.SetStateAction<number>>;
    slideToLoop?: number;
 }
-
+// swiperRef - ref to swiper component
+// el - class name for pagination container
+// bullet - class name for bullet
+// activeBullet - class name for active bullet
+// totalSlides - total number of slides
+// activeIndex - active slide index
+// setActiveIndex - function to set active slide index
+// slideToLoop - slide transition duration
 const CustomSwiperPagination: React.FC<Props> = ({ swiperRef, el, bullet, activeBullet, totalSlides, activeIndex, setActiveIndex, slideToLoop }) => {
    const handleSlideChange = (index: number) => {
       if (swiperRef.current && swiperRef.current.swiper.realIndex !== index) {
@@ -42,6 +49,8 @@ const swiperRef = useRef<{ swiper: SwiperClass } | null>(null);
    const updateActivePagination = (swiper: SwiperClass) => {
       setActiveIndex(swiper.realIndex);
    };
+   
+   //swiper options
    ref={swiperRef}
    onSwiper={onSwiperInit}
    onSlideChange={updateActivePagination}

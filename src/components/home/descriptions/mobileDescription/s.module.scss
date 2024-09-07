@@ -1,0 +1,79 @@
+.content {
+   display: none;
+   position: relative;
+   @media (max-width: 767px) {
+      display: block;
+   }
+}
+.label {
+   &__container {
+      padding: 1vw;
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      border-radius: 15px;
+      overflow: hidden;
+      position: relative;
+      height: 350px;
+      z-index: 2;
+      background: #afafafd3;
+      @media (max-width: 420px) {
+         height: 320px;
+      }
+   }
+   &__text {
+      max-width: 70vw;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      @media (max-width: 600px) {
+         max-width: initial;
+      }
+   }
+   &__p {
+      line-height: 120%;
+      font-weight: 400;
+      font-size: var(--font16);
+      display: block;
+      flex: 1 1 auto;
+      @media (max-width: 420px) {
+         font-size: var(--font14);
+      }
+   }
+}
+.logo {
+   width: 15%;
+   height: auto;
+   //object-fit: contain;
+   aspect-ratio: 1/1;
+}
+.btn {
+   margin: 30px 0 20px 0px;
+   border: 1px solid #000;
+   max-width: 40%;
+   width: 100%;
+   height: 50px;
+   background: #000;
+   color: #fff;
+   font-size: var(--font16);
+   @media (min-width: 768px) {
+      transition: 0.3s;
+      &:hover {
+         background: #afafaf;
+         color: #000;
+      }
+   }
+   @media (max-width: 480px) {
+      max-width: 60%;
+   }
+}
+.image {
+   border-radius: 15px;
+   overflow: hidden;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   aspect-ratio: 5/2;
+}

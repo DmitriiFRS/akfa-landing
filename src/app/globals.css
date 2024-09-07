@@ -15,6 +15,7 @@
    --font45: 3.12vw;
    --font50: 3.47vw;
    --font60: 4.16vw;
+   --font80: 5.55vw;
    --font100: 6.94vw;
    --padding: 0 4.17vw;
    --padding-mobile: 0 10px;
@@ -127,6 +128,7 @@ h6 {
       --font45: 45px;
       --font50: 50px;
       --font60: 60px;
+      --font80: 80px;
       --font100: 100px;
    }
 }

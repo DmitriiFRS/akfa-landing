@@ -7,6 +7,8 @@ import description3 from "@/../public/blog3.webp";
 import Image, { StaticImageData } from "next/image";
 import FadeUp from "@/components/common/fadeUp/FadeUp";
 import FormButton from "./FormButton";
+import logo from "@/../public/logos/imzo_2.png";
+import MobileDescription from "./mobileDescription/MobileDescription";
 
 const data = [
    {
@@ -51,15 +53,18 @@ function DescriptionContent({ index, el }: DescriptionContentProps) {
          <div className={`${s.content} ${index % 2 === 0 ? s.content__inverted : ""}`}>
             <div className={s.label}>
                <div className={`${s.label__container} ${index % 2 === 0 ? s.label__container__inverted : ""}`}>
-                  <div className={s.label__logo}>logo</div>
-                  <p className={s.label__p}>{el.description}</p>
-                  <FormButton className={s.btn}>Оставить заявку</FormButton>
+                  <Image className={s.logo} src={logo} alt="logo" width={200} height={400} />
+                  <div className={s.label__text}>
+                     <p className={s.label__p}>{el.description}</p>
+                     <FormButton className={s.btn}>Оставить заявку</FormButton>
+                  </div>
                </div>
             </div>
             <div className={s.image}>
                <Image src={el.image} alt="description" fill style={{ objectFit: "cover" }} />
             </div>
          </div>
+         <MobileDescription el={el} />
       </FadeUp>
    );
 }

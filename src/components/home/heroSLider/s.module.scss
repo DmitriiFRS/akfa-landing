@@ -22,14 +22,20 @@
    position: absolute;
    bottom: 5%;
    left: 2%;
-   //width: max-content;
    height: max-content;
    color: #fff;
    font-size: var(--font40);
    z-index: 1;
    max-width: 50vw;
-   @media (max-width: 720px) {
-      max-width: initial;
+   @media (max-width: 900px) {
+      font-size: var(--font28);
+   }
+   @media (max-width: 768px) {
+      max-width: 80vw;
+      bottom: 10%;
+   }
+   @media (max-width: 480px) {
+      max-width: 95vw;
    }
 }
 .shadow {
@@ -48,6 +54,10 @@
    z-index: 2;
    border-radius: 15px;
    overflow: hidden;
+   @media (max-width: 768px) {
+      right: 10px;
+      left: 10px;
+   }
 }
 .pagination {
    height: 100%;
@@ -55,8 +65,7 @@
    display: flex;
    justify-content: center;
    @media (max-width: 768px) {
-      width: 100%;
-      padding-right: 10px;
+      width: 100vw;
    }
 }
 .bullet {

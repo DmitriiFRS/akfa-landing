@@ -16,7 +16,7 @@
    flex: 0 1 30%;
    background: #000;
    padding: 20px;
-   background: #fff;
+   background: #afafaf;
    color: #000000;
 }
 .right {
@@ -24,7 +24,7 @@
    gap: 1vw 2vw;
    color: red;
    padding: 3vw;
-   background: #fff;
+   background: #afafaf;
    position: relative;
    &__success {
       color: #000;
@@ -57,6 +57,7 @@
    }
    &__tel {
       grid-area: tel;
+      background: #afafaf;
    }
    &__textfield {
       grid-area: text;
@@ -84,7 +85,7 @@
    @media (min-width: 768px) {
       transition: 0.3s;
       &:hover {
-         background: #fff;
+         background: #afafaf;
          color: #000;
       }
    }

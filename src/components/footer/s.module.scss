@@ -1,5 +1,5 @@
 .footer {
-   background: #ffffff;
+   background: #afafaf;
    color: #000000;
    padding: 3vw 0;
    font-size: var(--font12);
@@ -16,6 +16,12 @@
    flex-direction: column;
    gap: 4vw;
 }
+.logo {
+   width: 5vw;
+   height: auto;
+   aspect-ratio: 1/1;
+}
+
 .info {
    display: flex;
    flex-direction: column;

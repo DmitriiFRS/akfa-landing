@@ -6,6 +6,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
+import logo from "@/../public/logos/imzo_2.png";
 
 const data = [
    {
@@ -15,7 +16,7 @@ const data = [
    },
    {
       id: 1,
-      title: "info@akfa.uz",
+      title: "info@imzo.uz",
       icon: MdOutlineEmail,
    },
    {
@@ -30,7 +31,7 @@ function Footer() {
       <footer className={s.footer}>
          <Container className={s.container}>
             <div className={s.main}>
-               <div>logo</div>
+               <Image className={s.logo} src={logo} alt="logo" width={200} height={200} />
                <ul className={s.info}>
                   {data.map((el) => {
                      return (
@@ -56,7 +57,7 @@ function Footer() {
          </Container>
          <div className={s.line}></div>
          <Container>
-            <div className={s.rights}>© 2024 AKFA. Все права защищены</div>
+            <div className={s.rights}>© 2024 IMZO. Все права защищены</div>
          </Container>
       </footer>
    );

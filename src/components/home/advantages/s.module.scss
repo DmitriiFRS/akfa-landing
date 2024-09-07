@@ -6,6 +6,10 @@
    justify-content: space-between;
    gap: 5vw;
    color: #fff;
+   @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
 }
 .item {
    flex: 0 1 25%;
@@ -15,12 +19,15 @@
 }
 .imgContainer {
    border-radius: 50%;
-   border: 1px solid #fffafa;
+   background: #5c5c5c;
    overflow: hidden;
    width: 100%;
    height: auto;
    aspect-ratio: 2/2;
    padding: 20%;
+   @media (max-width: 768px) {
+      width: 70%;
+   }
 }
 .image {
    width: 100%;
@@ -33,6 +40,15 @@
    font-weight: 500;
    line-height: 130%;
    letter-spacing: 0.3px;
+   @media (max-width: 768px) {
+      text-align: center;
+   }
+   @media (max-width: 420px) {
+      font-size: var(--font14);
+   }
+   @media (max-width: 370px) {
+      font-size: var(--font12);
+   }
 }
 .zamer {
    margin-top: 5vw;
@@ -43,10 +59,16 @@
    align-items: center;
    padding: 2vw 4vw;
    border-radius: 12vw;
+   @media (max-width: 600px) {
+      margin-top: 6%;
+   }
    &__imgContainer {
       width: 20vw;
       height: auto;
       aspect-ratio: 1/1;
+      @media (max-width: 600px) {
+         display: none;
+      }
    }
    &__image {
       aspect-ratio: 2/2;
@@ -57,16 +79,40 @@
       display: flex;
       flex-direction: column;
       gap: 1vw;
+      @media (max-width: 600px) {
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         width: 100%;
+      }
    }
    &__title {
       font-size: var(--font100);
       text-transform: uppercase;
       font-weight: 600;
+      @media (max-width: 1100px) {
+         font-size: var(--font80);
+      }
+      @media (max-width: 900px) {
+         font-size: var(--font50);
+      }
+      @media (max-width: 480px) {
+         font-size: var(--font30);
+      }
    }
    &__subtitle {
       font-size: var(--font60);
       text-transform: uppercase;
       font-weight: 500;
       margin-top: 20px;
+      @media (max-width: 1100px) {
+         font-size: var(--font45);
+      }
+      @media (max-width: 900px) {
+         font-size: var(--font28);
+      }
+      @media (max-width: 480px) {
+         font-size: var(--font20);
+      }
    }
 }
