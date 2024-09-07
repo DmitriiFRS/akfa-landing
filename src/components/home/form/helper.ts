@@ -1,17 +1,18 @@
 import * as Yup from "yup";
+import "yup-phone-lite";
 
 const regx = {
    name: /^[a-zA-Zа-яА-Я]{2,20}$/,
-   tel: /\(\d{3}\)\s\d{3}-\d{4}/,
+   tel: /^.{16}$/,
 };
 
 const name = Yup.string().matches(regx.name, "Имя от 2 до 20 символов").required("Обязательное поле");
 
-const phoneNumber = Yup.string().matches(regx.tel, "Введите корректный номер телефона").required("Обязательное поле");
+const phoneNumber = Yup.string().phone().required("Обязательное поле");
 
 export const schemas = Yup.object().shape({
    name,
-   tel: phoneNumber,
+   tel: Yup.string(),
    comment: Yup.string(),
 });
 

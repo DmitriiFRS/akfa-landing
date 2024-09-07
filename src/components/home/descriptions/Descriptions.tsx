@@ -1,11 +1,12 @@
 "use server";
 import Container from "@/components/common/container/Container";
 import s from "./s.module.scss";
-import description1 from "@/../public/description1.webp";
-import description2 from "@/../public/description2.webp";
-import description3 from "@/../public/description3.webp";
+import description1 from "@/../public/blog1.webp";
+import description2 from "@/../public/blog2.webp";
+import description3 from "@/../public/blog3.webp";
 import Image, { StaticImageData } from "next/image";
 import FadeUp from "@/components/common/fadeUp/FadeUp";
+import FormButton from "./FormButton";
 
 const data = [
    {
@@ -52,7 +53,7 @@ function DescriptionContent({ index, el }: DescriptionContentProps) {
                <div className={`${s.label__container} ${index % 2 === 0 ? s.label__container__inverted : ""}`}>
                   <div className={s.label__logo}>logo</div>
                   <p className={s.label__p}>{el.description}</p>
-                  <button className={s.btn}>Оставить заявку</button>
+                  <FormButton className={s.btn}>Оставить заявку</FormButton>
                </div>
             </div>
             <div className={s.image}>

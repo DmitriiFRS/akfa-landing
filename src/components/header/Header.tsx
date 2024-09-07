@@ -9,18 +9,9 @@ function Header() {
       <header className={s.header}>
          <Container className={s.container}>
             <div>logo</div>
-            <nav className={s.nav}>
-               <ul className={s.navlist}>
-                  {nav.map((el) => {
-                     return (
-                        <li key={el.id}>
-                           <StyledLink href={el.url}>{el.title}</StyledLink>
-                        </li>
-                     );
-                  })}
-               </ul>
-            </nav>
-            <a href="#">+998 99 999 99</a>
+            <a className={s.tel} style={{ color: "black" }} href="tel:+99899999999" target="_blank">
+               +998 99 999 99
+            </a>
          </Container>
       </header>
    );

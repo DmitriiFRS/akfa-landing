@@ -1,6 +1,6 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import s from "./s.module.scss";
 import { A11y, Autoplay } from "swiper/modules";
@@ -8,6 +8,8 @@ import slide1 from "@/../public/slide1-1.webp";
 import slide2 from "@/../public/slide2-1.webp";
 import slide3 from "@/../public/slide3-1.webp";
 import Image from "next/image";
+import CustomSwiperPagination from "@/components/common/customPaginationSwiper/customPaginationSwiper";
+import { useRef, useState } from "react";
 
 const slider = [
    {
@@ -28,9 +30,23 @@ const slider = [
 ];
 
 function HeroSLider() {
+   const swiperRef = useRef<{ swiper: SwiperClass } | null>(null);
+   const [slides, setSlides] = useState(0);
+   const [activeIndex, setActiveIndex] = useState(0);
+   const onSwiperInit = (swiper: SwiperClass): void => {
+      const numberOfSlides = swiper.slides.length || 0;
+      setSlides(numberOfSlides);
+   };
+
+   const updateActivePagination = (swiper: SwiperClass) => {
+      setActiveIndex(swiper.realIndex);
+   };
    return (
       <section className={s.hero}>
          <Swiper
+            ref={swiperRef}
+            onSwiper={onSwiperInit}
+            onSlideChange={updateActivePagination}
             className={s.swiper}
             slidesPerView={1}
             loop
@@ -51,6 +67,17 @@ function HeroSLider() {
                );
             })}
          </Swiper>
+         <div className={s.paginationContainer}>
+            <CustomSwiperPagination
+               swiperRef={swiperRef}
+               el={s.pagination}
+               bullet={s.bullet}
+               activeBullet={s.bulletActive}
+               totalSlides={slides}
+               activeIndex={activeIndex}
+               setActiveIndex={setActiveIndex}
+            />
+         </div>
       </section>
    );
 }

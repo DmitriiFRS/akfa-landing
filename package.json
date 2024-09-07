@@ -20,7 +20,8 @@
     "react-phone-input-2": "^2.15.1",
     "sass": "^1.77.8",
     "swiper": "^11.1.11",
-    "yup": "^1.4.0"
+    "yup": "^1.4.0",
+    "yup-phone-lite": "^2.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

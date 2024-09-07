@@ -1,6 +1,6 @@
 .footer {
-   background: #000;
-   color: #fff;
+   background: #ffffff;
+   color: #000000;
    padding: 3vw 0;
    font-size: var(--font12);
    margin-top: 8.33vw;
@@ -34,11 +34,11 @@
       display: flex;
       gap: 1vw;
       & a {
-         color: #fff;
+         color: #000000;
       }
    }
    &__icon {
-      border: 1px solid #ffffff;
+      border: 1px solid #000000;
       border-radius: 50%;
       padding: 5px;
       font-size: var(--font30);
@@ -47,6 +47,6 @@
 .line {
    height: 1px;
    width: 100%;
-   background: #fff;
+   background: #000000;
    margin: 2vw 0;
 }

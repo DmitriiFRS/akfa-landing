@@ -15,6 +15,7 @@
    --font45: 3.12vw;
    --font50: 3.47vw;
    --font60: 4.16vw;
+   --font100: 6.94vw;
    --padding: 0 4.17vw;
    --padding-mobile: 0 10px;
 }
@@ -55,7 +56,7 @@ body {
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
-   background-color: #fffbf6;
+   background-color: #000000;
    color: #000;
 }
 
@@ -107,4 +108,25 @@ h6 {
 
 .main {
    flex: 1 1 auto;
+}
+@media (max-width: 1100px) {
+   :root {
+      --font11: 11px;
+      --font12: 12px;
+      --font14: 14px;
+      --font15_6: 15.6px;
+      --font16: 16px;
+      --font18: 18px;
+      --font19_7: 19.7px;
+      --font20: 20px;
+      --font24: 24px;
+      --font28: 28px;
+      --font30: 30px;
+      --font35_7: 35.7px;
+      --font40: 40px;
+      --font45: 45px;
+      --font50: 50px;
+      --font60: 60px;
+      --font100: 100px;
+   }
 }
