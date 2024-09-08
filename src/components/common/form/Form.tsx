@@ -41,9 +41,3 @@ const Form = () => {
 };
 
 export default Form;
-/*
-<div className={`${s.loaderContainer} ${isLoading && s.loader__active}`}>
-               <span className={s.loader}></span>
-            </div>
-            <Image onClick={handleClose} className={s.close} src={""} alt="close" width={31} height={31} />
-            <Image src={""} alt="logo" className={s.logo} width={180} height={62} />*/

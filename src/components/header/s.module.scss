@@ -23,6 +23,9 @@
    height: auto;
    aspect-ratio: 5/2;
    object-fit: contain;
+   @media (max-width: 480px) {
+      max-width: 20vw;
+   }
 }
 
 .tel {
@@ -31,4 +34,10 @@
    display: block;
    display: flex;
    justify-content: flex-end;
+   @media (max-width: 900px) {
+      font-size: var(--font16);
+   }
+   @media (max-width: 480px) {
+      font-size: var(--font14);
+   }
 }

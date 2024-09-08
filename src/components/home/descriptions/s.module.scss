@@ -1,5 +1,8 @@
 .description {
    margin-top: 8.33vw;
+   @media (max-width: 767px) {
+      margin-top: 60px;
+   }
 }
 .container {
    display: flex;

@@ -1,10 +1,16 @@
 .formSection {
    margin-top: 8.33vw;
+   @media (max-width: 767px) {
+      margin-top: 0;
+   }
 }
 .container {
    display: flex;
    //gap: 4vw;
    margin-top: 30px;
+   @media (max-width: 650px) {
+      flex-direction: column;
+   }
 }
 .title {
    font-weight: 500;
@@ -18,6 +24,15 @@
    padding: 20px;
    background: #afafaf;
    color: #000000;
+   @media (max-width: 900px) {
+      flex: 0 1 40%;
+      padding: 10px;
+   }
+}
+.errorSpan {
+   display: inline-block;
+   max-width: 150px;
+   width: 100%;
 }
 .right {
    flex: 0 1 70%;
@@ -26,6 +41,14 @@
    padding: 3vw;
    background: #afafaf;
    position: relative;
+   @media (max-width: 900px) {
+      flex: 0 1 60%;
+      padding: 20px 20px 0 0;
+   }
+   @media (max-width: 650px) {
+      padding: 10px;
+      min-height: 200px;
+   }
    &__success {
       color: #000;
       font-size: var(--font16);
@@ -39,6 +62,11 @@
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "name tel" "text text";
       gap: 1vw 2vw;
+      @media (max-width: 900px) {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+      }
    }
    &__container_active {
       display: none;
@@ -52,6 +80,9 @@
    //justify-content: space-between;
    padding: 0 10px;
    font-size: var(--font16);
+   @media (max-width: 650px) {
+      height: 40px;
+   }
    &__name {
       grid-area: name;
    }
@@ -64,9 +95,18 @@
       height: 10vw;
       padding: 10px;
       border: 1px solid #636363;
+      @media (max-width: 650px) {
+         height: 100px;
+      }
    }
    & span {
       font-size: var(--font12);
+      @media (max-width: 1100px) {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
    }
 }
 .field {
@@ -82,6 +122,9 @@
    height: 2.5vw;
    color: #fff;
    font-size: var(--font16);
+   @media (max-width: 900px) {
+      height: 40px;
+   }
    @media (min-width: 768px) {
       transition: 0.3s;
       &:hover {
@@ -98,6 +141,12 @@
    justify-content: center;
    color: #fff;
    font-size: var(--font14);
+   @media (max-width: 900px) {
+      margin-top: 20px;
+   }
+   @media (max-width: 650px) {
+      gap: 10px;
+   }
    &__item {
       display: flex;
       gap: 1.5vw;
@@ -107,18 +156,27 @@
    font-size: var(--font20);
    font-weight: 500;
    margin-top: 20px;
+   @media (max-width: 900px) {
+      margin-top: 10px;
+   }
 }
 .innerP {
    font-size: var(--font14);
    font-weight: 300;
    margin-top: 30px;
    line-height: 130%;
+   @media (max-width: 900px) {
+      margin-top: 15px;
+   }
 }
 .social {
    &__list {
       margin-top: 30px;
       display: flex;
       gap: 1vw;
+      @media (max-width: 650px) {
+         gap: 15px;
+      }
       & a {
          color: #000;
       }
