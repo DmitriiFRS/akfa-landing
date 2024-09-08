@@ -64,8 +64,8 @@ function DescriptionContent({ index, el }: DescriptionContentProps) {
                <Image src={el.image} alt="description" fill style={{ objectFit: "cover" }} />
             </div>
          </div>
-         <MobileDescription el={el} />
       </FadeUp>
    );
 }
 export default Descriptions;
+//<MobileDescription el={el} />
