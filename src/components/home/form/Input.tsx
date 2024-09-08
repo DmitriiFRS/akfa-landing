@@ -14,7 +14,17 @@ interface Props {
 function Input({ id, name, placeholder, error, className }: Props) {
    return (
       <div className={`${s.input} ${className}`}>
-         <Field name={name} id={id} placeholder={placeholder} className={s.field} />
+         <Field
+            name={name}
+            id={id}
+            placeholder={placeholder}
+            className={s.field}
+            style={{
+               "&::placeholder": {
+                  color: "red",
+               },
+            }}
+         />
          <ErrorMessage name={name}>
             {(error) => (
                <span className={s.errorSpan} style={{ color: "red" }}>

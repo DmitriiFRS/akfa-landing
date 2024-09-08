@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import "../../../app/globals.css";
 import s from "./s.module.scss";
 import { useState } from "react";

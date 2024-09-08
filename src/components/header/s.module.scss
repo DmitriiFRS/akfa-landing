@@ -24,7 +24,7 @@
    aspect-ratio: 5/2;
    object-fit: contain;
    @media (max-width: 480px) {
-      max-width: 20vw;
+      max-width: 30vw;
    }
 }
 
@@ -34,6 +34,7 @@
    display: block;
    display: flex;
    justify-content: flex-end;
+   margin-top: 10px;
    @media (max-width: 900px) {
       font-size: var(--font16);
    }

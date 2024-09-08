@@ -22,7 +22,7 @@ function Inputs({
       setIsLoading(true);
       const result = await postApplication({
          name: values.name,
-         tel: values.tel,
+         tel: phoneValue,
          msg: values.comment,
          url: `https://api.telegram.org/bot7361432516:AAF6ve7fehG3vtJZ1Ilayqk84zXwVD1LhL0/sendMessage`,
       });

@@ -20,9 +20,8 @@
 }
 .left {
    flex: 0 1 30%;
-   background: #000;
    padding: 20px;
-   background: #afafaf;
+   background: #f1f1f1;
    color: #000000;
    @media (max-width: 900px) {
       flex: 0 1 40%;
@@ -39,7 +38,7 @@
    gap: 1vw 2vw;
    color: red;
    padding: 3vw;
-   background: #afafaf;
+   background: #f1f1f1;
    position: relative;
    @media (max-width: 900px) {
       flex: 0 1 60%;
@@ -88,7 +87,7 @@
    }
    &__tel {
       grid-area: tel;
-      background: #afafaf;
+      background: transparent;
    }
    &__textfield {
       grid-area: text;
@@ -139,7 +138,7 @@
    flex-direction: column;
    gap: 0.8vw;
    justify-content: center;
-   color: #fff;
+   color: #000000;
    font-size: var(--font14);
    @media (max-width: 900px) {
       margin-top: 20px;
