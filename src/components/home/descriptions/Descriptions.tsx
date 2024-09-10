@@ -7,7 +7,7 @@ import description3 from "@/../public/blog3.webp";
 import Image, { StaticImageData } from "next/image";
 import FadeUp from "@/components/common/fadeUp/FadeUp";
 import FormButton from "./FormButton";
-import logo from "@/../public/logos/imzo_2.png";
+import logo from "@/../public/logos/imzo_2-small.png";
 import MobileDescription from "./mobileDescription/MobileDescription";
 
 const data = [

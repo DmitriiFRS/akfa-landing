@@ -6,7 +6,7 @@ import { FaPhoneVolume } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
-import logo from "@/../public/logos/imzo_2.png";
+import logo from "@/../public/logos/imzo_2-small.png";
 
 const data = [
    {
