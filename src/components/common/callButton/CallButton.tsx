@@ -7,9 +7,9 @@ import { IoCallSharp } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 
 const contacts = {
-   inst: "#",
-   telegram: "#",
-   phone: "+998 99 999 99",
+   inst: "https://www.instagram.com/imzotechnology?igsh=MWUyeTJtem5kbDMxcA%3D%3D&utm_source=qr",
+   telegram: "https://t.me/fresh877",
+   phone: "+998 33 592 54 54",
 };
 
 export default function CallButton() {

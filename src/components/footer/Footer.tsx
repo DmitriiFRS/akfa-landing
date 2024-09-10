@@ -11,17 +11,17 @@ import logo from "@/../public/logos/imzo_2-small.png";
 const data = [
    {
       id: 0,
-      title: "Узбекистан, г. Ташкент ул. Мустакиллик 8",
+      title: "г. Ташкент ул. Большая кольцевая дорога, 1А",
       icon: FaLocationDot,
    },
    {
       id: 1,
-      title: "info@imzo.uz",
+      title: "Imzotechnology@gmail.com",
       icon: MdOutlineEmail,
    },
    {
       id: 2,
-      title: "+998 71 200 00 00",
+      title: "+998 33 592 54 54",
       icon: FaPhoneVolume,
    },
 ];
@@ -46,10 +46,10 @@ function Footer() {
             <div className={s.social}>
                <div className={s.social__label}>Социальные сети</div>
                <div className={s.social__list}>
-                  <a href="#" target="_blank">
+                  <a href="https://t.me/fresh877" target="_blank">
                      <FaTelegramPlane className={s.social__icon} />
                   </a>
-                  <a href="#" target="_blank">
+                  <a href="https://www.instagram.com/imzotechnology?igsh=MWUyeTJtem5kbDMxcA%3D%3D&utm_source=qr" target="_blank">
                      <FaInstagram className={s.social__icon} />
                   </a>
                </div>

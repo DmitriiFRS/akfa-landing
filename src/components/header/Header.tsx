@@ -14,8 +14,8 @@ function Header() {
                <Image className={s.logo} src={imzo} alt="logo" width={200} height={400} />
                <Image className={s.logo} src={engelberg} alt="logo" width={200} height={400} />
             </div>
-            <a className={s.tel} style={{ color: "black" }} href="tel:+99899999999" target="_blank">
-               +998 99 999 99
+            <a className={s.tel} style={{ color: "black" }} href="tel:+998335925454" target="_blank">
+               +998 33 592 54 54
             </a>
          </Container>
       </header>
