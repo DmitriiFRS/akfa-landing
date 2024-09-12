@@ -13,7 +13,13 @@ export const metadata: Metadata = {
    description:
       "Здесь Вы можете приобрести пластиковые окна и двери от производителей Акфа (Akfa), Imzo, Engelberg в Ташкенте по выгодной цене. Установка пластиковых окон и дверей недорого. Звоните!",
    keywords: ["акфа", "цена", "окна и двери", "пластиковые", "купить", "ташкент", "установка", "имзо", "энгельберг"],
+   verification: {
+      google: "HovDfvMZTNVJvlsr44obSahWMHRMFgXInDnJT8Nnig8",
+   },
 };
+export async function generateStaticParams() {
+   return [];
+}
 
 export default function RootLayout({
    children,
