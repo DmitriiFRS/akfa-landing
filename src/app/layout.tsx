@@ -5,6 +5,7 @@ import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import AnimationWrapper from "@/components/header/AnimationWrapper";
 import CallButton from "@/components/common/callButton/CallButton";
+import AdSense from "@/components/common/adsense/AdSense";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -29,6 +30,11 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body className={montserrat.className}>
+            {
+               <head>
+                  <AdSense pid="" />
+               </head>
+            }
             <CallButton />
             <div className="wrapper">
                <AnimationWrapper>
