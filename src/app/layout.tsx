@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import AnimationWrapper from "@/components/header/AnimationWrapper";
 import CallButton from "@/components/common/callButton/CallButton";
 import AdSense from "@/components/common/adsense/AdSense";
+import Scripts from "@/scripts/Scripts";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
          <body className={montserrat.className}>
             {
                <head>
+                  <Scripts />
                   <AdSense pid="" />
                </head>
             }
