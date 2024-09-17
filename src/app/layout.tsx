@@ -17,6 +17,7 @@ export const metadata: Metadata = {
    keywords: ["акфа", "цена", "окна и двери", "пластиковые", "купить", "ташкент", "установка", "имзо", "энгельберг"],
    verification: {
       google: "HovDfvMZTNVJvlsr44obSahWMHRMFgXInDnJT8Nnig8",
+      yandex: "e431eff8922b4a40",
    },
 };
 export async function generateStaticParams() {
