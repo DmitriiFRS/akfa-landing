@@ -7,6 +7,7 @@ import AnimationWrapper from "@/components/header/AnimationWrapper";
 import CallButton from "@/components/common/callButton/CallButton";
 import AdSense from "@/components/common/adsense/AdSense";
 import Scripts from "@/scripts/Scripts";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -31,13 +32,13 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
+         {
+            <head>
+               <Scripts />
+            </head>
+         }
+         <GoogleTagManager gtmId="GTM-5XQ94M4L" />
          <body className={montserrat.className}>
-            {
-               <head>
-                  <Scripts />
-                  <AdSense pid="" />
-               </head>
-            }
             <CallButton />
             <div className="wrapper">
                <AnimationWrapper>
