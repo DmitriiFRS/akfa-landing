@@ -20,6 +20,11 @@ export const metadata: Metadata = {
       google: "HovDfvMZTNVJvlsr44obSahWMHRMFgXInDnJT8Nnig8",
       yandex: "e431eff8922b4a40",
    },
+   openGraph: {
+      title: "Купить окна Акфа и двери Imzo, Engelberg в Ташкенте по выгодной цене | Установка пластиковых окон и дверей",
+      description:
+         "Здесь Вы можете приобрести пластиковые окна и двери от производителей Акфа (Akfa), Imzo, Engelberg в Ташкенте по выгодной цене. Установка пластиковых окон и дверей недорого. Звоните!",
+   },
 };
 export async function generateStaticParams() {
    return [];
@@ -32,13 +37,8 @@ export default function RootLayout({
 }>) {
    return (
       <html lang="en">
-         {
-            <head>
-               <Scripts />
-            </head>
-         }
-         <GoogleTagManager gtmId="GTM-5XQ94M4L" />
          <body className={montserrat.className}>
+            <Scripts />
             <CallButton />
             <div className="wrapper">
                <AnimationWrapper>
