@@ -41,6 +41,7 @@ function Scripts() {
         `,
             }}
          />
+         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
          <noscript>
             <iframe
                src="https://www.googletagmanager.com/ns.html?id=GTM-5XQ94M4L"
