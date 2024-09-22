@@ -41,7 +41,7 @@ function Scripts() {
         `,
             }}
          />
-         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></Script>
+         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3024076206505745" crossOrigin="anonymous"></Script>
          <noscript>
             <iframe
                src="https://www.googletagmanager.com/ns.html?id=GTM-5XQ94M4L"
