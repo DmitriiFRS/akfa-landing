@@ -12,7 +12,9 @@ interface FadeUpInterface {
 
 export default function FadeUp({ children, delayOrder, delay, childrenDelay = 0.5 }: FadeUpInterface) {
    const control = useAnimation();
-   const [ref, inView] = useInView();
+   const [ref, inView] = useInView({
+      threshold: 0.2,
+   });
 
    const boxVariant = {
       visible: {
